@@ -8,8 +8,7 @@
     "contexts",
     "dist/context.js",
     "dist/context.esm.js",
-    "js/constants.js",
-    "js/index.js"
+    "js"
   ],
   "repository": {
     "type": "git",
