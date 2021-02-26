@@ -5,5 +5,5 @@
 
 module.exports = {
   CONTEXT_URL: 'https://w3id.org/security/ed25519-signature-2020/v1',
-  CBORLD_VALUE: 0x0 // value needs to be > 0x8000
+  CBORLD_VALUE: 0x8001
 };
