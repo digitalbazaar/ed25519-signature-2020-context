@@ -4,7 +4,7 @@
 'use strict';
 
 const {CONTEXT_URL} = require('./constants');
-const context = require('../contexts/ed25519-signature-2020-v1.jsonld');
+const context = require('../contexts/ed25519-signature-2020-v1.json');
 
 module.exports = {
   documentLoader(url) {
