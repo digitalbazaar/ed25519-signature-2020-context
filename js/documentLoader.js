@@ -3,12 +3,12 @@
  */
 'use strict';
 
-const {ED25519_SIGNATURE_CONTEXT_URL} = require('./constants');
+const {CONTEXT_URL} = require('./constants');
 const context = require('../contexts/ed25519-signature-2020-v1.jsonld');
 
 module.exports = {
   documentLoader(url) {
-    if(url !== ED25519_SIGNATURE_CONTEXT_URL) {
+    if(url !== CONTEXT_URL) {
       throw new Error(`Loading document "${url}" is not allowed.`);
     }
 
