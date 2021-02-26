@@ -1,7 +1,7 @@
 {
-  "name": "context-template",
+  "name": "ed25519-signature-2020-context",
   "version": "0.0.1",
-  "description": "Context template repository.",
+  "description": "JSON-LD context for the Ed25519Signature2020 suite.",
   "main": "js",
   "module": "./dist/context.esm.js",
   "files": [
@@ -13,17 +13,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/context-template"
+    "url": "https://github.com/digitalbazaar/ed25519-signature-2020-context"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/context-template/issues"
+    "url": "https://github.com/digitalbazaar/ed25519-signature-2020-context/issues"
   },
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com/"
   },
-  "homepage": "https://github.com/digitalbazaar/context-template#readme",
+  "homepage": "https://github.com/digitalbazaar/ed25519-signature-2020-context#readme",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@babel/core": "^7.11.0",

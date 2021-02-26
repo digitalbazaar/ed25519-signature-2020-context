@@ -1,9 +1,8 @@
-# Context Template Repository _(context-template)_
+# Ed25519Signature2020 Suite JSON-LD Context _(ed25519-signature-2020-context)_
 
-<!-- [![NPM Version](https://img.shields.io/npm/v/context-template.svg?style=flat-square)](https://npm.im/context-template) -->
+<!-- [![NPM Version](https://img.shields.io/npm/v/ed25519-signature-2020-context.svg?style=flat-square)](https://npm.im/ed25519-signature-2020-context) -->
 
-> A GitHub template repository for JSON-LD contexts.
-
+> JSON-LD context for the Ed25519Signature2020 suite.
 
 ## Table of Contents
 
@@ -17,7 +16,7 @@
 
 See also (related specs):
 
-*
+* [Ed25519 Signature 2020 Suite Draft Spec](https://w3c-ccg.github.io/lds-ed25519-2020/)
 
 ## Install
 
@@ -26,7 +25,7 @@ Requires Node.js 10+
 To install via NPM:
 
 ```
-npm install context-template
+npm install ed25519-signature-2020-context
 ```
 
 ## Usage
@@ -34,19 +33,19 @@ npm install context-template
 ```js
 const {
   contexts, constants, appContextMap, documentLoader
-} = require('context-template');
+} = require('ed25519-signature-2020-context');
 
 // use URL in a JSON-LD context
 const obj = {
   "@context": [
-    constants.EXAMPLE_CONTEXT_URL,
+    constants.CONTEXT_URL,
     // ...
   ],
   // ...
 };
 
 // get context data for a specific context
-const data = contexts.get('https://w3id.org/example/v1');
+const data = contexts.get('https://w3id.org/security/ed25519-signature-2020/v1');
 // ...
 ```
 
@@ -57,12 +56,11 @@ applications.
 
 The library exports the following properties:
 - `constants`: A Object that maps constants to well-known context URLs. The
-  main constant `EXAMPLE_CONTEXT_URL` may be updated from time to time to the
+  main constant `CONTEXT_URL` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
 - `appContextMap`: For use with `cborld` library.
 - `documentLoader`
-
 
 ## Commercial Support
 
