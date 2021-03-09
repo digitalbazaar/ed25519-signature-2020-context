@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/ed25519-signature-2020-context.svg)](https://npm.im/ed25519-signature-2020-context)
 
-> JSON-LD context for the Ed25519Signature2020 suite.
+> JSON-LD Context for the Ed25519 2020 Cryptosuite.
 
 ## Table of Contents
 
@@ -17,6 +17,7 @@
 See also (related specs):
 
 * [Ed25519 Signature 2020 Suite Draft Spec](https://w3c-ccg.github.io/lds-ed25519-2020/)
+* [Multibase](https://github.com/multiformats/multibase) (for `proofValue` and `publicKeyMultibase` encoding)
 
 ## Install
 
@@ -43,6 +44,10 @@ const obj = {
   ],
   // ...
 };
+
+// Codec term map value for CBOR-LD
+constants.CBORLD_VALUE
+// 0x14
 
 // get context data for a specific context
 const data = contexts.get('https://w3id.org/security/ed25519-signature-2020/v1');
