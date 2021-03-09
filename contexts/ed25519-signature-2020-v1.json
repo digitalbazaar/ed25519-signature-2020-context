@@ -14,10 +14,6 @@
           "@id": "https://w3id.org/security#controller",
           "@type": "@id"
         },
-        "privateKeyMultibase": {
-          "@id": "https://w3id.org/security#privateKeyMultibase",
-          "@type": "https://w3id.org/security#multibase"
-        },
         "publicKeyMultibase": {
           "@id": "https://w3id.org/security#publicKeyMultibase",
           "@type": "https://w3id.org/security#multibase"
