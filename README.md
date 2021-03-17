@@ -21,7 +21,7 @@ See also (related specs):
 
 ## Install
 
-Requires Node.js 10+
+Requires Node.js 12+
 
 To install via NPM:
 
@@ -50,7 +50,7 @@ constants.CBORLD_VALUE
 // 0x14
 
 // get context data for a specific context
-const data = contexts.get('https://w3id.org/security/ed25519-signature-2020/v1');
+const data = contexts.get('https://w3id.org/security/suites/ed25519-2020/v1');
 // ...
 ```
 
