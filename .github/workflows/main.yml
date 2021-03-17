@@ -33,8 +33,6 @@ jobs:
       - run: npm install
       - name: Run karma tests
         run: npm run test-karma
-        env:
-          CI: true
   lint:
     runs-on: ubuntu-latest
     timeout-minutes: 10
