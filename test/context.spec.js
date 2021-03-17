@@ -15,7 +15,7 @@ const contextUrl = constants.CONTEXT_URL;
 describe('Example Context', () => {
   it('constants', async () => {
     expect(constants).to.exist();
-    expect(constants).to.have.property('CBORLD_VALUE');
+    expect(constants).to.have.property('CBORLD_CODEC_VALUE');
   });
 
   it('contexts', async () => {
