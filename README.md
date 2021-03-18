@@ -46,7 +46,7 @@ const obj = {
 };
 
 // Codec term map value for CBOR-LD
-constants.CBORLD_VALUE
+constants.CBORLD_CODEC_VALUE
 // 0x14
 
 // get context data for a specific context
