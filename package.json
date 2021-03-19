@@ -1,6 +1,6 @@
 {
   "name": "ed25519-signature-2020-context",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON-LD Context for the Ed25519 2020 Cryptosuite.",
   "main": "js",
   "module": "./dist/context.esm.js",
