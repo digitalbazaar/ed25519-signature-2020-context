@@ -14,6 +14,10 @@
           "@id": "https://w3id.org/security#controller",
           "@type": "@id"
         },
+        "revoked": {
+          "@id": "https://w3id.org/security#revoked",
+          "@type": "xsd:dateTime"
+        },
         "publicKeyMultibase": {
           "@id": "https://w3id.org/security#publicKeyMultibase",
           "@type": "https://w3id.org/security#multibase"
