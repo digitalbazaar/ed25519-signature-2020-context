@@ -16,7 +16,7 @@
         },
         "revoked": {
           "@id": "https://w3id.org/security#revoked",
-          "@type": "xsd:dateTime"
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "publicKeyMultibase": {
           "@id": "https://w3id.org/security#publicKeyMultibase",
