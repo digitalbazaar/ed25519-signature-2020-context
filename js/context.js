@@ -9,6 +9,11 @@ module.exports = {
     type: '@type',
     '@protected': true,
 
+    proof: {
+      '@id': 'https://w3id.org/security#proof',
+      '@type': '@id',
+      '@container': '@graph'
+    },
     Ed25519VerificationKey2020: {
       '@id': 'https://w3id.org/security#Ed25519VerificationKey2020',
       '@context': {
