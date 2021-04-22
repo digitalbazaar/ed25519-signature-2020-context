@@ -7,27 +7,27 @@ chai.should();
 const {expect} = chai;
 
 const {
-  contexts, constants, appContextMap, documentLoader
-} = require('../dist/context.js');
-
-const contextUrl = constants.CONTEXT_URL;
+  contexts, constants, appContextMap, CONTEXT_URL, CONTEXT, documentLoader
+} = require('..');
 
 describe('Example Context', () => {
   it('constants', async () => {
     expect(constants).to.exist();
     expect(constants).to.have.property('CBORLD_CODEC_VALUE');
+    expect(CONTEXT_URL).to.exist;
+    expect(CONTEXT).to.exist;
   });
 
   it('contexts', async () => {
-    expect(contexts.get(contextUrl)).to.have.property('@context');
+    expect(contexts.get(CONTEXT_URL)).to.have.property('@context');
   });
 
   it('appContextMap', async () => {
-    expect(appContextMap.get(contextUrl)).to.exist();
+    expect(appContextMap.get(CONTEXT_URL)).to.exist();
   });
 
   it('documentLoader', async () => {
-    const {document} = await documentLoader(contextUrl);
+    const {document} = await documentLoader(CONTEXT_URL);
     expect(document).to.have.property('@context');
   });
 });
