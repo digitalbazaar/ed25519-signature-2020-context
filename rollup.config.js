@@ -1,6 +1,6 @@
-import commonjs from 'rollup-plugin-commonjs';
+const commonjs = require('rollup-plugin-commonjs');
 
-export default {
+module.exports = {
   // Input is created by webpack in previous build step, in CommonJS format.
   input: 'dist/context.js',
   output: {
@@ -11,7 +11,10 @@ export default {
     commonjs({
       // explicitly list exports otherwise only have 'default'
       namedExports: {
-        'dist/context.js': ['contexts', 'constants']
+        'dist/context.js': [
+          'contexts', 'constants', 'CONTEXT', 'CONTEXT_URL', 'appContextMap',
+          'documentLoader'
+        ]
       }
     })
   ]

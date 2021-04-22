@@ -4,6 +4,7 @@
 'use strict';
 
 module.exports = {
+  CONTEXT_FILENAME: 'ed25519-signature-2020-v1.jsonld',
   CONTEXT_URL: 'https://w3id.org/security/suites/ed25519-2020/v1',
   CBORLD_CODEC_VALUE: 0x14
 };
